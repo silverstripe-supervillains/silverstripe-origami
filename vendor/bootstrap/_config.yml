@@ -1,0 +1,41 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+kramdown:
+  auto_ids: true
+
+# Permalinks
+permalink:        pretty
+
+# Server
+source:           docs
+destination:      _gh_pages
+host:             0.0.0.0
+port:             9001
+baseurl:          ""
+url:              http://getbootstrap.com
+encoding:         UTF-8
+exclude:          [assets/scss/]
+
+gems:
+  - jekyll-redirect-from
+
+# Custom vars
+current_version:  4.0.0-alpha
+repo:             https://github.com/twbs/bootstrap
+sass_repo:        https://github.com/twbs/bootstrap-sass
+slack:            https://bootstrap-slack.herokuapp.com
+
+download:
+  source:         https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.zip
+  dist:           https://github.com/twbs/bootstrap/releases/download/v4.0.0-alpha/bootstrap-4.0.0-alpha-dist.zip
+
+blog:             http://blog.getbootstrap.com
+expo:             http://expo.getbootstrap.com
+themes:           http://themes.getbootstrap.com
+
+cdn:
+  css:            https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css
+  js:             https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js
+  jquery:         https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js

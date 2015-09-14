@@ -1,0 +1,18 @@
+---
+Name: origamiconfig
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+DataObject:
+  extensions:
+    - OrigamiDataObjectExtension
+FormField:
+  extensions:
+    - OrigamiFormFieldExtension
+DropdownField:
+  extensions:
+    - OrigamiDropdownFieldExtension
+    
+Security:
+  default_login_dest: "admin/origami"

@@ -1,0 +1,12 @@
+<div class="field form-group row form__textareafield">
+	<label class="col-sm-3">{{field.title}}</label>
+	<div class="col-sm-9">
+		<!-- update scope after 400ms, unless blur -->
+		<textarea
+			class="form-control"
+			ng-model="field.value"
+            ng-disabled="top.state === top.states.processing"
+			ng-model-options="{ updateOn: 'default blur', debounce: { 'default': 400, 'blur': 0 } }"
+		></textarea>
+	</div>
+</div>

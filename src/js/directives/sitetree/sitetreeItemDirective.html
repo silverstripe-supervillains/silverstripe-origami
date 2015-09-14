@@ -1,0 +1,27 @@
+<div class="sitetree__item">
+    <span style="margin-left: {{20 * depth}}px;">
+        <span ng-switch="item.children.length">
+            <span ng-switch-when="0">
+                <i class="fa fa-fw"></i>
+            </span>
+            <span ng-switch-default>
+                <a href="" ng-click="item.showChildren = !item.showChildren">
+                    <i class="fa fa-caret-right fa-fw" ng-class="{'fa-rotate-90': item.showChildren}"></i>
+                </a>
+            </span>
+        </span>
+
+        <a ng-href="edit/{{item.id}}" class="sitetree__pageicon {{('sitetree__pageicon--'+item.pagetype)}}">
+            {{item.title}}
+        </a>
+        <!-- <span ng-repeat="flag in item.flags" class="sitetree__flag label label-warning">{{flag.text}}</span> -->
+    </span>
+</div>
+
+<div ng-if="item.showChildren">
+    <div ng-if="item.children">
+        <div class="sitetree__items">
+            <sitetree-items></sitetree-items>
+        </div>
+    </div>
+</div>

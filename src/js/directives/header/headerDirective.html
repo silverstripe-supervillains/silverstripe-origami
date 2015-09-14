@@ -1,0 +1,20 @@
+<header class="header clearfix">
+    <a class="header__mobile-toggle" ng-click="$root.showMainNavMobileMenu = !$root.showMainNavMobileMenu">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <a
+        class="header__profile"
+        ng-if="user.FirstName"
+        ng-class="{'header__profile--show-divider': include.scope.$eval(include.showUserDividerExpression)}"
+    >
+        <span class="fa-stack">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-user fa-stack-1x"></i>
+        </span>
+        {{user.FirstName}}
+        <i class="fa fa-caret-down"></i>
+    </a>
+
+    <div ng-include="include.template"></div>
+</header>

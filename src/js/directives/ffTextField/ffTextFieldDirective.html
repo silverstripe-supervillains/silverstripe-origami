@@ -1,0 +1,13 @@
+<div class="field form-group row">
+	<label class="col-sm-3">{{field.title}}</label>
+	<div class="col-sm-9">
+		<!-- update scope after 400ms, unless blur -->
+		<input
+			type="text"
+			class="form-control"
+			ng-model="field.value"
+            ng-disabled="top.state === top.states.processing"
+			ng-model-options="{ updateOn: 'default blur', debounce: { 'default': 400, 'blur': 0 } }"
+		/>
+	</div>
+</div>

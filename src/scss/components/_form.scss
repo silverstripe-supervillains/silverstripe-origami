@@ -1,0 +1,34 @@
+/**
+ * Form styles
+ */
+
+.form__tab {
+  .btn {
+    margin-right: 10px;
+  }
+}
+
+.form__tab-fields {
+  margin-top: 20px;
+}
+
+.form__togglecompositefield {
+  .btn {
+    margin-bottom: 20px;
+  }
+}
+
+.form__textareafield {
+  textarea {
+    resize: none;
+  }
+}
+
+// Adds in helpers for all angular divs thrown in.
+// These aren't handled well off the bat.
+.form-inline {
+  .ng-scope, .ng-isolate-scope, .form__compositefield {
+    display: inline-block;
+    line-height: initial;
+  }
+}

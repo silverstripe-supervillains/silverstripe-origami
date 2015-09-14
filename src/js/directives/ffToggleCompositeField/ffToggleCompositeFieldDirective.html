@@ -1,0 +1,8 @@
+<div class="form__togglecompositefield">
+	<a href="#" class="btn btn-block btn-secondary" ng-click="showChildren = !showChildren">{{field.title}}</a>
+	<div ng-show="showChildren" class="form__togglecompositefield-fields">
+		<div ng-repeat="child in field.children">
+			<div form-field field="child" top-scope="top"></div>
+		</div>
+	</div>
+</div>

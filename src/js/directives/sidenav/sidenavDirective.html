@@ -1,0 +1,15 @@
+<nav class="sidenav" ng-class="{'sidenav--active': $root.showMainNavMobileMenu}">
+    <a class="sidenav__toggle-menu" ng-click="$root.showMainNavMobileMenu = !$root.showMainNavMobileMenu">
+        <i class="fa fa-times"></i>
+    </a>
+    <img class="sidenav__logo" src="{{config.OrigamiDir}}images/logo.png" />
+    <ul class="sidenav__list">
+        <li class="sidenav__item"><a class="sidenav__link" ng-href="./"><i class="fa fa-fw fa-sitemap"></i>Pages</a></li>
+        <li class="sidenav__item"><a class="sidenav__link" ng-href="assets"><i class="fa fa-fw fa-folder-open"></i>Files</a></li>
+        <li class="sidenav__item"><a class="sidenav__link" ng-href="security"><i class="fa fa-fw fa-lock"></i>Security</a></li>
+        <li class="sidenav__item"><a class="sidenav__link" ng-href="settings"><i class="fa fa-fw fa-cog"></i>Settings</a></li>
+    </ul>
+
+    <div cms-sidenav-queue></div>
+
+</nav>

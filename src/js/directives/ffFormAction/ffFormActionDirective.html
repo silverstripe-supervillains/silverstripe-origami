@@ -1,0 +1,12 @@
+<div class="field form-group">
+	<button
+        type="button"
+        ng-click="onClick($event)"
+        ng-disabled="top.state.value === 'processing' || field.isDisabled()"
+        data-action="{{field.name}}"
+        class="btn btn-sm btn-success"
+    >
+        <i ng-class="{'fa fa-circle-o-notch fa-spin': field.showProcessingSpinner && top.state.value === 'processing'}"></i>
+        {{field.title}}
+    </button>
+</div>

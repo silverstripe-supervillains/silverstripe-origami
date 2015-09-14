@@ -1,0 +1,8 @@
+<div ng-show="message != undefined" class="notification">
+    <div class="alert {{message.class}}" role="alert">
+        {{message.content}}
+        <a href="" ng-click="message = undefined">
+            <i class="fa fa-times"></i>
+        </a>
+    </div>
+</div>

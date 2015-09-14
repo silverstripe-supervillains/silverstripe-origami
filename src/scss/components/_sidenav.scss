@@ -1,0 +1,79 @@
+/**
+ * CMS Sidenav Styles
+ */
+
+.sidenav {
+	background: $theme-primary;
+	height: 100%;
+	left: 0;
+	padding-top: 20px;
+	position: fixed;
+	top: 0;
+	width: 210px;
+	z-index: 2;
+
+	@include media-breakpoint-down(sm) {
+		left: auto;
+		right: 100%;
+		width: 100%;
+
+		&.sidenav--active {
+			right: 0;
+		}
+	}
+}
+
+.sidenav__toggle-menu {
+	display: none;
+
+	@include media-breakpoint-down(sm) {
+		color: $colour-white;
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+
+		&:hover {
+			color: $theme-secondary;
+		}
+	}
+}
+
+.sidenav__logo {
+	cursor: pointer;
+	margin: 0 0 25px 15px;
+	width: 160px;
+	@include transition(scale, 0.3s, ease-in-out);
+
+	&:hover {
+		@include transform(translateX(5px));
+	}
+}
+
+.sidenav__link {
+	color: white;
+	display: block;
+	padding: 10px 20px;
+
+	&:hover, &:focus {
+		color: $theme-secondary;
+		text-decoration: none;
+		background: darken($theme-primary, 50%);
+	}
+	
+	&:hover {
+		background: darken($theme-primary, 5%);
+	}
+
+	i {
+		margin-right: 15px;
+	}
+}
+
+
+.sidenav__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

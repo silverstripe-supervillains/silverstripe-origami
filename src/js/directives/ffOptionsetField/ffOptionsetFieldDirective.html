@@ -1,0 +1,10 @@
+<div class="field form-group row">
+	<label class="col-sm-3">{{field.title}}</label>
+	<div class="col-sm-9">
+		<div class="radio" ng-repeat="option in field.options">
+			<label>
+				<input type="radio" name="{{field.name}}" ng-disabled="top.state === top.states.processing" ng-model="field.value" value="{{option.value}}" /> {{option.title}}
+			</label>
+		</div>
+	</div>
+</div>

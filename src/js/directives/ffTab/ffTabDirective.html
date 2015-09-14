@@ -1,0 +1,6 @@
+<div class="form__tab">
+	<a class="btn btn-sm btn-primary">{{field.title}}</a>
+	<div class="form__tab-fields" ng-repeat="child in field.children">
+		<div form-field field="child" top-scope="top"></div>
+	</div>
+</div>

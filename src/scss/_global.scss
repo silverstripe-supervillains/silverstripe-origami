@@ -1,0 +1,15 @@
+/**
+ * Global styles
+ */
+
+
+// Angular specific
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+body {
+	background: $bg-primary;
+	font-size: 14px;
+}

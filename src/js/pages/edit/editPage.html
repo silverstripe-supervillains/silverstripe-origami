@@ -1,0 +1,21 @@
+<div ng-switch="loading">
+
+    <div ng-switch-when="true" class="page-loading-icon-wrapper">
+        <i class="fa fa-2x fa-circle-o-notch fa-spin"></i>
+    </div>
+
+    <div ng-switch-default>
+        <div class="row">
+          <div class="col-sm-12">
+                <form>
+                    <div ng-repeat="field in fields">
+                        <div form-field field="field" top-scope="$parent.$parent"></div>
+                    </div>
+                </form>
+          </div>
+        </div>
+
+        <div cms-actionbar actions="actions" top-scope="$parent"></div>
+    </div>
+
+</div>

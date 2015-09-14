@@ -1,0 +1,11 @@
+---
+Name: origamiroutes
+After: '#modelascontrollerroutes'
+---
+Director:
+  rules:
+    'admin/origami': 'OrigamiPageController'
+    'admin/api/origami/editform': 'EditFormOrigamiApi'
+    'admin/api/origami/sitetree': 'SiteTreeOrigamiApi'
+    'admin/api/origami/user': 'UserOrigamiApi'
+    'admin/api/origami': 'OrigamiApi'

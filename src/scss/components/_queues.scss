@@ -1,0 +1,25 @@
+.sidenav__queue {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    .sidenav__queue-item {
+        cursor: pointer;
+    }
+}
+
+.queue-item-state__text--changed {
+    color: $state-changed;
+}
+
+.queue-item-state__text--processing {
+    color: $state-processing;
+}
+
+.queue-item-state__text--success {
+    color: $state-success;
+}
+
+.queue-item-state__text--failure {
+    color: $state-failure;
+}

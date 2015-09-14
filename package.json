@@ -1,0 +1,34 @@
+{
+  "name": "SilverStripe_Origami",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:vendor": "browserify src/js/vendor.es6 -t babelify -o javascript/vendor.js",
+    "build:js": "browserify src/js/app.es6 -t babelify -o javascript/app.js",
+    "build:js:watch": "watchify src/js/app.es6 -t babelify -o javascript/app.js",
+    "build:css": "node-sass -r --include-path node_modules/ src/scss/ -o css/",
+    "build:css:watch": "node-sass -w --include-path node_modules/ src/scss/ -o css/",
+    "watch": "npm run build:js:watch & npm run build:css:watch",
+    "minify:js": "uglifyjs javascript/app.js --compress --mangle --output javascript/app.js && uglifyjs javascript/vendor.js --compress --mangle --output javascript/vendor.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.4",
+    "angular-animate": "^1.4.5",
+    "angular-route": "^1.4.5",
+    "angular-sanitize": "^1.4.5",
+    "babel": "^5.8.23",
+    "babelify": "^6.3.0",
+    "browserify": "^11.0.1",
+    "font-awesome": "^4.4.0",
+    "lodash": "^3.10.1",
+    "node-bourbon": "^4.2.3",
+    "node-sass": "^3.3.2",
+    "normalize.css": "^3.0.3",
+    "object-assign": "^2.1.1",
+    "watchify": "^3.3.1",
+    "uglify-js": "^2.4.24"
+  }
+}

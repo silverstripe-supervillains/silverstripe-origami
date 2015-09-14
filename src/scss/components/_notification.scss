@@ -1,0 +1,29 @@
+/**
+ * Notification styles
+ */
+
+.notification {
+	display: block;
+	left: 0;
+	opacity: 1;
+	padding-left: 225px;
+	padding-right: $grid-gutter-width / 2;
+	position: fixed;
+	top: -18px;
+	z-index: 5;
+	width: 100%;
+
+	@include media-breakpoint-down(sm) {
+		padding-left: $grid-gutter-width / 2;
+	}
+
+	.alert {
+		padding-top: 30px;
+		
+		i.fa-times {
+			position: absolute;
+			right: 30px;
+			margin-top: 3px;
+		}
+	}
+}

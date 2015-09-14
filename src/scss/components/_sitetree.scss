@@ -1,0 +1,31 @@
+/**
+ * Sitetree styles
+ */
+$sitetree-spacing: 5px;
+
+.sitetree {
+    .sitetree__items {
+        .sitetree__item {
+            a {
+                &:focus, &:hover {
+                    text-decoration: none;
+					border-bottom: 2px dotted $theme-tertiary;
+                }
+				padding: $sitetree-spacing 0;
+            }
+			padding: $sitetree-spacing 0;
+        }
+		
+		.sitetree__pageicon {
+			&:before {
+				font-family: FontAwesome;
+				padding-right: $sitetree-spacing;
+				content: "\f016";
+			}
+			
+			&.sitetree__pageicon--ErrorPage:before {
+				content: "\f00d";
+			}
+		}
+    }
+}

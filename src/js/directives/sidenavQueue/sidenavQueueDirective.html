@@ -1,0 +1,17 @@
+<div class="sidenav__queue">
+    <div class="sidenav__queue-items">
+
+        <ul class="sidenav__list" ng-if="!queueIsEmpty()">
+            <li ng-repeat="queueItem in queue" class="sidenav__list sidenav__queue-item">
+                <a ng-href="{{queueItem.link}}" class="sidenav__link">
+                    <i
+                        class="queue-item-state__text--{{queueItem.state.value}} fa fa-lg fa-fw"
+                        ng-class="{'fa-circle-o-notch fa-spin': queueItem.state.value == 'processing', 'fa-circle-o': queueItem.state.value != 'processing'}"
+                    ></i>
+                    <span class="sidenav__queue-item-title">{{queueItem.scope.$eval(queueItem.titleExpression)}}</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>

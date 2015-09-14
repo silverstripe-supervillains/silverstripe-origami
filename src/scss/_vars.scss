@@ -1,0 +1,33 @@
+/**
+ * Variables
+ */
+
+// background colours
+$bg-primary: #fff;
+$bg-secondary: #f6f6f7;
+
+// theme colours
+$theme-primary: #232720;
+$theme-secondary: #32B8E4;
+$theme-tertiary: #ed135a;
+
+$btn-success-bg: #02a781;
+
+// base colours
+$colour-white: #fff;
+$colour-black: #000;
+
+$colour-grey: darken($colour-white, 50%);
+$colour-grey-light: lighten($colour-grey, 20%);
+$colour-grey-lighter: lighten($colour-grey, 35%);
+$colour-grey-lightest: lighten($colour-grey, 45%);
+$colour-grey-dark: darken($colour-grey, 20%);
+$colour-grey-darker: darken($colour-grey, 35%);
+$colour-grey-darkest: darken($colour-grey, 45%);
+
+// state colours indicators
+$state-unchanged: #EDEDED;
+$state-changed: #48A9ED;
+$state-processing: #D959FF;
+$state-success: #6FFF41;
+$state-failure: #FF4348;

@@ -1,0 +1,15 @@
+<div class="header__include">
+    <div class="header__breadcrumbs">
+        <ol class="list-inline">
+            <li ng-repeat="crumb in include.scope.breadcrumbs">
+                <a ng-href="edit/{{crumb.id}}">{{crumb.title}}</a> <i class="fa fa-angle-double-right" ng-if="!$last"></i>
+            </li>
+        </ol>
+    </div>
+    <div class="header__users" ng-if="include.scope.users.length" ng-repeat="user in include.scope.users">
+        <span class="fa-stack user-icon">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-stack-1x">{{user.initials}}</i>
+        </span>
+    </div>
+</div>
